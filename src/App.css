@@ -1,0 +1,268 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Kanit, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr{
+  width: 10vw;
+  height: 3px;
+  border-radius: 10px;
+  background-color: crimson;
+  border: 2px solid crimson;
+  margin: 1rem auto;
+}
+
+
+.hero{
+  background-image: url(./images/landingpage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 3rem;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 30%;
+  z-index: 9999;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;  
+}
+
+
+.sidebar ul,li {
+  position: relative;
+  list-style-type: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.sidebar a {
+  display: flex;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.sidebar a:hover{
+  color: white;
+  transition:all 0.2s ease-in-out 0s;
+}
+
+/* .sidebar-btn-container{
+  height: 30vh;
+  background-color: violet;
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+} */
+.sidebar-btn{
+  padding: 16px 64px;
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  background-color: crimson;
+  transition:all 0.2s ease-in-out 0s;
+  margin: 3rem auto;
+}
+
+.sidebar-btn:hover{
+  color: black;
+  background-color: white;
+}
+
+.sidebar-closing{
+  margin-left: auto;
+  font-size: 3rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.hero-text{
+  position: absolute;
+  top: 35vh;
+  left: 10vw;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.order-btn{
+  font-size: 2rem;
+  padding: 12px 48px;
+  border: none;
+  background-color: crimson;
+}
+
+.order-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.products-container{
+  height: auto;
+  background-color: #150f0f;
+  color: #fff;
+}
+.products-container h2{
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem;
+}
+.products-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: auto;
+
+}
+.products-wrapper h3{
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.products-wrapper p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.products-wrapper span{
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+}
+.product img{
+  width: 15vw;
+  height: 20vh;
+  border-radius: 8px;
+}
+
+.potd {
+  height: 50vh;
+  background-image: url('https://images.unsplash.com/photo-1620374643762-9c0e91a22b10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-position: center;
+}
+.potd-text {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  color: aliceblue;
+}
+
+footer{
+  background-color: #150f0f;
+  height: 10vh;
+}
+
+.socials a{
+  display: flex;
+  flex-direction: row;
+  color: grey;
+  align-items: center;
+}
+.socials ul,li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 1rem;
+  font-size: 2rem;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1200px ) {
+  
+  nav {
+    padding: 1rem;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .product{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .product img {
+    width: 50vw;
+  }
+  .potd {
+    height: auto;
+  }
+  .social ul,li{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  footer ul,li{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .sidebar {
+    width: 100vw;
+    height: 100vh;
+  }
+  .sidebar-btn {
+    padding: 16px 64px;
+    width: 100vw;
+    border: none;
+    font-size: 1.5rem;
+    background-color: crimson;
+    transition:all 0.2s ease-in-out 0s;
+    margin: 3rem auto;
+
+  }
+}
